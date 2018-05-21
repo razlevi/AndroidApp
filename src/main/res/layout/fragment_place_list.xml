@@ -1,0 +1,81 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context="project.raz.circles.ui.PlaceFrag">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="horizontal">
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+
+            android:src="@drawable/btn_search_near"
+            android:scaleType="fitCenter"
+            android:layout_weight="1"
+            android:id="@+id/btnNear" />
+
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+
+            android:id="@+id/btnPlace"
+            android:src="@drawable/btn_search_place"
+            android:scaleType="fitCenter"
+            android:layout_weight="1"/>
+
+        </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <SeekBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:background="#ffcecece"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/seekBar"
+            android:max="10" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:text="500m"
+            android:gravity="center"
+            android:layout_weight="2"
+            android:id="@+id/editTextDistance" />
+    </LinearLayout>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtPlaceName"
+            android:textColor="#ffffff"
+            android:hint="Type here..."
+            android:textColorHint="#888888"
+            android:layout_weight="1"/>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/lstPlaces"
+        android:layout_weight="8"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:cacheColorHint="#ff000000"
+        android:divider="#19000000"
+        android:dividerHeight="4dp"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:smoothScrollbar="true"
+        ></com.handmark.pulltorefresh.library.PullToRefreshListView>
+</LinearLayout>

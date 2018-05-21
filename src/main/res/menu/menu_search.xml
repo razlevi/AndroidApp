@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <item android:id="@+id/action_show_favorites" android:title="Show Favorites"
+        android:orderInCategory="100" app:showAsAction="never" />
+        <item android:id="@+id/action_change_units" android:title="KM-MILES"
+            android:orderInCategory="100" app:showAsAction="never" />
+        <item android:id="@+id/action_delete_favorites" android:title="Delete Favorites"
+            android:orderInCategory="100" app:showAsAction="never" />
+
+</menu>
